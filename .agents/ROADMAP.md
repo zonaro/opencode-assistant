@@ -27,4 +27,48 @@ Estimativa total conservadora para uma pessoa: aproximadamente 10–18 semanas e
 4. Sem porta pública, credencial hardcoded, senha de sudo ou root genérico.
 
 ## Mapa de issues
-As issues serão criadas em sequência. Seus IDs e dependências serão incluídos aqui ao finalizar a organização.
+
+Cada issue possui critérios de aceite, estimativa e dependências explícitas. O número é o identificador real no GitHub.
+
+### F0 — Fundação
+
+- [#1](https://github.com/zonaro/opencode-assistant/issues/1) — Compatibilidade OpenCode
+- [#2](https://github.com/zonaro/opencode-assistant/issues/2) — Monorepo Flutter/Bridge
+- [#3](https://github.com/zonaro/opencode-assistant/issues/3) — Contrato API
+- [#4](https://github.com/zonaro/opencode-assistant/issues/4) — CI e qualidade
+
+### F1 — MVP Linux
+
+- [#5](https://github.com/zonaro/opencode-assistant/issues/5) — Bridge e serviço do usuário
+- [#6](https://github.com/zonaro/opencode-assistant/issues/6) — Sessões e streaming
+- [#7](https://github.com/zonaro/opencode-assistant/issues/7) — Chat Flutter
+- [#8](https://github.com/zonaro/opencode-assistant/issues/8) — Overlay GNOME
+- [#9](https://github.com/zonaro/opencode-assistant/issues/9) — Modos Pessoal/Desenvolvimento
+- [#10](https://github.com/zonaro/opencode-assistant/issues/10) — Aprovações e auditoria
+- [#11](https://github.com/zonaro/opencode-assistant/issues/11) — Tema, i18n e acessibilidade
+
+### F2 — Android privado
+
+- [#12](https://github.com/zonaro/opencode-assistant/issues/12) — Pareamento/revogação
+- [#13](https://github.com/zonaro/opencode-assistant/issues/13) — Tailscale Serve
+- [#14](https://github.com/zonaro/opencode-assistant/issues/14) — Cliente Android
+- [#15](https://github.com/zonaro/opencode-assistant/issues/15) — Retomada multi-dispositivo
+
+### F3 — Experiência
+
+- [#16](https://github.com/zonaro/opencode-assistant/issues/16) — STT/TTS
+- [#17](https://github.com/zonaro/opencode-assistant/issues/17) — Notificações
+- [#18](https://github.com/zonaro/opencode-assistant/issues/18) — Anexos/clipboard
+
+### F4 — Admin seguro
+
+- [#19](https://github.com/zonaro/opencode-assistant/issues/19) — Broker polkit
+- [#20](https://github.com/zonaro/opencode-assistant/issues/20) — Operações administrativas tipadas
+- [#21](https://github.com/zonaro/opencode-assistant/issues/21) — Hardening e bloqueio emergencial
+
+### F5 — Distribuição
+
+- [#22](https://github.com/zonaro/opencode-assistant/issues/22) — RPM/AppImage Fedora
+- [#23](https://github.com/zonaro/opencode-assistant/issues/23) — APK + validação ponta a ponta
+
+**Primeira execução recomendada:** #1 → #2 → #3 → #5 → #6 → #7 → #8. A issue #4 pode ocorrer em paralelo depois de #2. As demais seguem as dependências individuais. A fase F4 é opcional para um assistente sem privilégios, mas obrigatória antes de disponibilizar ações administrativas reais.
